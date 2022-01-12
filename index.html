@@ -12,33 +12,31 @@
 <body>
     
     <!-- Inizio header -->
-    <header class="container-fluid">
+    <header>
         
         <!-- Inizio navbar -->
-        <nav class="row align-items-center text-white">
-
-            <div class="col-10 col-md-4">
-                <h3 class="fs-4 fw-bold">START BOOTSTRAP</h3>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container text-white">
+              <h2 class="fs-4 fw-bold">START BOOTSTRAP</h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item fw-bold">
+                    <a class="nav-link text-white" href="#">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item fw-bold">
+                    <a class="nav-link text-white" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item fw-bold">
+                    <a class="nav-link text-white" href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="col-2 text-end">
-                <i class="bi bi-list d-md-none fs-3 p-1 rounded border border-secondary text-secondary"></i>
-            </div>
-
-            <div class="col-md-2 d-none d-md-block border border-secondary">
-                PORTFOLIO
-            </div>
-
-            <div class="col-md-2 d-none d-md-block border border-secondary">
-                ABOUT
-            </div>
-
-            <div class="col-md-2 d-none d-md-block border border-secondary">
-                CONTACT
-            </div>
-
-        </nav>
-        <!-- Fine navbar -->
+          </nav>
+          <!-- Fine navbar -->
 
     </header>
     <!-- Fine header -->
@@ -47,25 +45,27 @@
     <main>
 
         <!-- Inizio sezione avatar -->
-        <section class="container-fluid">
+        <section class="container-fluid" id="jumbotron">
 
             <!-- Inizio riga avatar -->
-            <div class="row bg-secondary text-white">
+            <div class="row text-white ms_avatar">
 
                 <div class="col-12 text-center">
-                    IMG
+                    <img src="img/avatar.svg" class="img-fluid" alt="Avatar">
                 </div>
 
                 <div class="col-12 text-center">
-                    START BOOTSTRAP
+                    <h1 class="fw-bold">START BOOTSTRAP</h1>
                 </div>
 
-                <div class="col-12 text-center">
-                    ICONS
+                <div class="col-12 text-white text-center">
+                    
+                    <i class="bi bi-star-fill fs-3 star"></i>
+                   
                 </div>
 
-                <div class="col-12 text-center">
-                    GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR
+                <div class="col-12 text-center mb-4">
+                    <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
                 </div>
 
             </div>
@@ -78,27 +78,39 @@
         <section class="container">
 
             <!-- Inizio riga intestazione portfolio -->
-            <div class="row bg-success text-center text-white">
+            <div class="row text-center text-dark pt-2 pb-2">
 
-                <div class="col-12">
-                    PORTFOLIO
+                <div class="col-12 fw-bold">
+                    <h3>PORTFOLIO</h3>
                 </div>
 
                 <div class="col-12">
-                    ICONS
+                    <i class="bi bi-star-fill fs-3"></i>
                 </div>
 
             </div>
             <!-- Fine riga intestazione portfolio -->
 
             <!-- Inizio riga immagini portfolio -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center text-white bg-primary">
-                <div class="col">IMG</div>
-                <div class="col">IMG</div>
-                <div class="col">IMG</div>
-                <div class="col">IMG</div>
-                <div class="col">IMG</div>
-                <div class="col">IMG</div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 text-center g-2 pt-2 pb-2">
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/cabin.png" alt="Capanna">
+                </div>
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/cake.png" alt="Capanna">
+                </div>
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/circus.png" alt="Capanna">
+                </div>
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/game.png" alt="Capanna">
+                </div>
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/safe.png" alt="Capanna">
+                </div>
+                <div class="col">
+                    <img class="rounded img-fluid" src="img/submarine.png" alt="Capanna">
+                </div>
             </div>
             <!-- Fine riga immagini portfolio -->
 
@@ -108,8 +120,10 @@
         <!-- Inizio sezione about -->
         <section class="container-fluid">
 
+            <!-- INSERIRE MS WRAPPER 60 > CONTAINER FLUID > ROW > COL-12 -->
+
             <!-- Inizio riga principale about -->
-            <div class="row bg-danger text-center text-white">
+            <div class="row text-center text-white ms_about">
 
                 <div class="col-12">
                     ABOUT
@@ -121,13 +135,16 @@
 
                 <!-- Inizio riga testo about -->
                 <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo nisi labore dolores aperiam atque ratione distinctio magni similique perferendis, earum laborum ipsa quam et facere suscipit libero? Molestiae, labore.</div>
-                    <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro placeat quia illum laboriosam eum culpa rem ad! Nisi dignissimos quidem numquam incidunt ratione neque odio, aut soluta fuga culpa. Maiores!</div>
+                    <div class="col px-3 py-3 text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo nisi labore dolores aperiam atque ratione distinctio magni similique perferendis, earum laborum ipsa quam et facere suscipit libero? Molestiae, labore.</div>
+                    <div class="col px-3 py-3 text-break">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro placeat quia illum laboriosam eum culpa rem ad! Nisi dignissimos quidem numquam incidunt ratione neque odio, aut soluta fuga culpa. Maiores!</div>
                 </div>
                 <!-- Fine riga testo about -->
 
                 <div class="col-12">
-                    BUTTON
+                    <button type="button" class="btn btn-outline-success ms_btn-clear">
+                        <i class="bi bi-download"></i>
+                        Download
+                    </button>
                 </div>
 
             </div>
@@ -176,6 +193,8 @@
 
     </main>
     <!-- Fine main -->
+
+    <!-- DIVIDI IL FOOTER IN DUE SEZIONI TOP E BOTTOM -->
 
     <!-- Inizio footer -->
     <footer class="container-fluid">
