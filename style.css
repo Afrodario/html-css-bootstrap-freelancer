@@ -24,14 +24,6 @@ img.rounded {
     color: white;
 }
 
-.star::after {
-    content: "";
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 2px;
-    width: 20px;
-}
-
 .navbar-toggler {
     border-color: white !important;
 }
@@ -62,5 +54,18 @@ footer {
 }
 
 .ms_footer-bottom {
+    background-color: #2c3e50;
+}
+
+.dash {
+    display: inline-block;
+    height: 5px;
+    width: 73px;
+    background-color: white;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.dash.dash-black {
     background-color: #2c3e50;
 }
