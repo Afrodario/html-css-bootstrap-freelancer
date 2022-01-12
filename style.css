@@ -11,7 +11,7 @@ section img {
     width: 200px;
 }
 
-.row.ms_avatar, .row.ms_about {
+.row.ms_avatar, #ms_about {
     background-color: #1abc9c;
 }
 
@@ -38,4 +38,21 @@ img.rounded {
 
 .navbar-toggler-icon {
     filter: invert(100%);
+}
+
+.ms_wrapper_60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+form div.mb-3 input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+.ms_message_form {
+    padding-bottom: 100px;
 }
