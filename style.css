@@ -3,12 +3,24 @@ header nav {
     background-color: #2c3e50;
 }
 
+section {
+    padding: 30px 0;
+}
+
 #jumbotron {
     padding-top: 80px;
 }
 
 section img {
     width: 200px;
+}
+
+.ms_nav_link {
+    color: white !important;
+}
+
+.ms_nav_link:hover {
+    color: #1abc9c !important;
 }
 
 .row.ms_avatar, #ms_about {
@@ -51,10 +63,13 @@ form div.mb-3 input {
 
 footer {
     background-color: #3a546d;
+    padding-top: 30px;
 }
 
 .ms_footer-bottom {
     background-color: #2c3e50;
+    height: 80px;
+    padding-top: 30px;
 }
 
 .dash {
@@ -93,4 +108,9 @@ footer {
 
 .ms_card:hover .overlay {
     display: block;
+}
+
+#contact .form-control::placeholder {
+    font-size: 20px;
+    color: #2c3e50;
 }
